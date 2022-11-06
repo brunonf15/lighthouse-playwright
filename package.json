@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf test-results && rimraf playwright-report && rimraf junit-results && rimraf lighthouse",
-    "test": "npx playwright test lighthouse.spec.ts --project=chromium"
+    "test": "npx playwright test lighthouse.spec.ts"
   },
   "author": "",
   "license": "ISC",
