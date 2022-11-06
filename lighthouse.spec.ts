@@ -9,7 +9,7 @@ test('Accessibility test', async ({ browserName }) => {
         args: ['--remote-debugging-port=9222'],
     });
     let pageToAudit = await context.newPage();
-    await pageToAudit.goto('https://www.washington.edu/accesscomputing/AU/before.html');
+    await pageToAudit.goto('https://www.letsgetchecked.ie/');
 
     await playAudit({
         page: pageToAudit,
