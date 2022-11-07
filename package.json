@@ -13,8 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.27.0",
-    "allure-commandline": "^2.18.1",
-    "allure-playwright": "^2.0.0-beta.19",
     "lighthouse": "^9.6.5",
     "open": "^8.4.0",
     "playwright": "^1.27.0",
