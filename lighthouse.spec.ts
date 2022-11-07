@@ -26,7 +26,9 @@ test('Accessibility test', async ({ browserName }) => {
               json: true, //defaults to false
               html: true, //defaults to false
               csv: true, //defaults to false
-            }
+            },
+            name: `lighthouse-report`, //defaults to `lighthouse-${new Date().getTime()}`
+            directory: `lighthouse`, //defaults to `${process.cwd()}/lighthouse`
         },
     },
     );

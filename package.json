@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf test-results && rimraf playwright-report && rimraf junit-results && rimraf lighthouse",
-    "test": "npx playwright test lighthouse.spec.ts"
+    "clean": "rimraf lighthouse",
+    "test": "npm run clean && npx playwright test lighthouse.spec.ts",
+    "test-report": "npm run clean && npx playwright test lighthouse.spec.ts && npm run open-report",
+    "open-report": "start lighthouse/lighthouse-report.html"
   },
   "author": "",
   "license": "ISC",
@@ -14,13 +16,12 @@
     "allure-commandline": "^2.18.1",
     "allure-playwright": "^2.0.0-beta.19",
     "lighthouse": "^9.6.5",
+    "open": "^8.4.0",
     "playwright": "^1.27.0",
     "playwright-lighthouse": "^2.2.2",
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@faker-js/faker": "^7.4.0",
-    "dotenv": "^16.0.3",
     "rimraf": "^3.0.2"
   }
 }
